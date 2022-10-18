@@ -1,0 +1,19 @@
+div {
+  display: block;
+}
+
+.logo {
+  margin: 56px 0 46px;
+}
+
+.logo img {
+  display: block;
+  max-height: 224px;
+  margin: 0 auto;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
