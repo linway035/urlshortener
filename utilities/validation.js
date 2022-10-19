@@ -1,23 +1,4 @@
-{{!--
-
-<head>
-  <link rel="stylesheet" href="/stylesheets/index.css" />
-</head> --}}
-
-
-<div class="container mt-5">
-  <form class="pt-5 d-grid gap-2 col-6 mx-auto" novalidate>
-    <input type="url" class="form-control text-muted " placeholder="Input URL here" />
-    <div class="valid-feedback"></div>
-    <div class="invalid-feedback"></div>
-    <div class="mt-4 d-grid gap-2 col-6 mx-auto">
-      <button type="submit" id="submit-btn" class="btn btn-outline-primary">Shorten</button>
-    </div>
-  </form>
-</div>
-
-
-<script>
+function validation() {
   const form = document.querySelector("form");
   const submitButton = document.querySelector("#submit-btn");
 
@@ -36,4 +17,6 @@
       }
     });
   });
-</script>
+}
+
+module.exports = validation;

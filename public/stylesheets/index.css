@@ -17,3 +17,7 @@ img {
   vertical-align: middle;
   max-width: 100%;
 }
+
+.form-control {
+  border-radius: 30px;
+}
