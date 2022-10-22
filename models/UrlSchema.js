@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const shortUrlSchema = new Schema({
-  originalURL: { type: String, required: true },
-  shortURL: { type: String, required: true },
+  originalURL: { type: String, require: true },
+  shortURL: { type: String, require: true, unique: true },
   clicks: {
     type: Number,
     required: true,
@@ -11,4 +11,4 @@ const shortUrlSchema = new Schema({
   },
 });
 
-module.exports = mongoose.model("shortURL", shortUrlSchema);
+module.exports = mongoose.model("UrlSchema", shortUrlSchema);
